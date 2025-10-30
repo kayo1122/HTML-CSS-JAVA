@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Pizza Place</title>
+		
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+	</head>
+	<body class = "pizza">
+        <header>
+            <h1><em><span class="red">Pizza</span>
+                    <span class="green">Place</span>
+            </em></h1>
+        </header>
+		<main>
+          <h2>Create Your Own</h2>
+            <form id="customizations" action="indexlast.html" method="get">
+                <input type="hidden" name="form_sent" value="1" />
+              <fieldset legend="Customize your pizza">  
+                <img src="images/pizza3.png" width="150" height="150" alt="pizza3"/>
+            
+                <h4>Please select from the options below</h4>
+
+                <p1><em>Toppings</em></p1>
+                        <br />
+                        <br />
+                        <p2><strong>Meat:</strong></p2>
+                        <br />
+                        <div class="topping-group">
+
+                        <label for="Pepperoni">Pepperoni <img src="images/pepperoni.jpg" width="50" height="50" alt="Pepperoni"/></label>
+                        <input type="checkbox" name="Meat" id="Pepperoni" value="Pepperoni" />
+                    
+                        <label for="Sausage">Italian Sausage <img src="images/sausage.jpg"width="50" height="50" alt="Italian Sausage"/></label>
+                        <input type="checkbox" name="Meat" id="Sausage" value="Sausage" />
+                        
+                        <label for="Bacon">Bacon Crumble <img src="images/bacon.jpg" width="50" height="50" alt="Bacon Crumble"/></label>
+                        <input type="checkbox" name="Meat" id="Bacon" value="Bacon" />
+                        
+                        <label for="Ham">Ham <img src="images/ham.jpg" width="50" height="50" alt="Ham"/></label>
+                        <input type="checkbox" name="Meat" id="Ham" value="Ham" />
+                        <br />
+                        <br />
+                        </div>
+                    <p2><strong>Vegetables</strong></p2>
+                        
+                    <div class="Vegetables">
+                        <label for="Mushrooms">Mushrooms <img src="images/mushrooms.jpg" width="50" height="50" alt="Mushrooms"/></label>
+                        <input type="checkbox" name="Vegetables" id="Mushrooms" value="Mushrooms" />
+                        
+                        <label for="Pepper">Green Pepper <img src="images/greenpepper.jpg" width="50" height="50" alt="Green Pepper"/></label>
+                        <input type="checkbox" name="Vegetables" id="Pepper" value="Pepper" />
+                        
+                        <label for="Onion">Onion<img src="images/onion.jpg" width="50" height="" alt="Onion"/></label>
+                        <input type="checkbox" name="Vegetables" id="Onion" value="Onion" />
+                        
+                        <label for="Broccoli">Broccoli<img src="images/broc.jpg" width="50" height="50" alt="Broccoli"/></label>
+                        <input type="checkbox" name="Vegetables" id="Broccoli" value="Broccoli" />
+                       
+                        <label for="Pineapple">Pineapple<img src="images/pineapple.jpg" width="50" height="50" alt="Pineapple"/></label>
+                         <input type="checkbox" name="Vegetables" id="Pineapple" value="Pineapple" />
+                        
+                        <label for="bananaPeppers"> Banana Peppers<img src="images/banana.jpg" width="50" height="50" alt="peppers"/></label>
+                        <input type="checkbox" name="Vegetables" id="bananaPeppers" value="bananaPeppers" />
+                     </div>   
+                    
+                     <p><em>Size:</em></p>
+                        
+                    <div class="size">
+                        <label for="small">Small (6-Slices)<img src="images/pizzaslice1.jpg" width="50" height="50" alt="small" /></label>
+                        <input type="radio" name="size" id="small" value="Small" />
+                       
+                        <label for="Medium">Medium (8-Slices)<img src="images/pizzaslice2.jpg" width="50" height="50" alt="Medium" /></label>
+                        <input type="radio" name="size" id="Medium" value="Medium" />
+                        
+                        <label for="Large">Large (10-Slices)<img src="images/pizzaslice3.jpg" width="50" height="50" alt="Large" /></label>
+                        <input type="radio" name="size" id="Large" value="Large" />
+                    </div>
+                    
+                    <p><em>Shape:</em></p>
+                    
+                    <div class="shape">    
+                        <label for="Square">Square <img src="images/square.jpg" width="50" height="50" alt="Square"/></label>
+                        <input type="radio" name="Shape" id="Square" value="Square" />
+                        
+                         <label for="Round">Round <img src="images/round.jpg" width="50" height="50" alt="Round" /></label>
+                        <input type="radio" name="Shape" id="Round" value="Round" />
+                    </div>   
+                        
+                    <p><em>Style</em></p>
+                    
+                    <div class="style">
+                        <label for="deepdish">Deep-Dish</label>
+                        <input type="radio" name="style" id="deepdish" value="deepdish" />
+                        
+                         <label for="regular">Regular</label>
+                        <input type="radio" name="style" id="regular" value="regular" />
+                       
+                        <label for="thincrust">Thin-Crust</label>
+                        <input type="radio" name="stle" id="thincrust" value="thincrust" />
+                    </div>    
+                    
+                    <p><em>How would you like your pizza cooked?</em></p>
+                    
+                    <div class="cookType">
+                        <label for="Undercooked">Undercooked</label>
+                        <input type="radio" name="cookType" id="Undercooked" value="Undercooked" />
+                      
+                        <label for="regular">Regular</label>
+                        <input type="radio" name="cookType" id="regular" value="regular" />
+                        
+                        <label for="Well-Done">Well-Done</label>
+                        <input type="radio" name="cookType" id="Well-Done" value="Well-Done" />
+                    </div>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type your comments here..."></textarea>
+                    </fieldset>
+                    <br />
+                    <br />
+                        <button type="reset">Reset</button>
+                        <button type="submit">Continue</button>
+            </form>
+            
+        </main>
+        <footer>
+            <p><small>Pizza People ©</small></p>
+        </footer>
+	</body>
+</html>
