@@ -1,31 +1,37 @@
 
 /* STEP 3: Set character encoding (must be first line of file) */
+@charset 'utf-8';
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
 div#container {
-
+  border: 10px solid black;
+  border-style: dashed;
+  border-top-color: blue;
+  border-color: green;
+  background-image: url('./images/stucco.jpg');
+  padding: 15%;
 }
 /* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
+
 
 /* STEP 4c: Apply shorthand to bottom border (border-bottom-width) using the clock rule (TRBL) */
 
 /* STEP 5a: Set padding values on the DIV#container element - set individual padding values, then use shorthand with the clock rule again (TRBL) */
-div#container {
-
-  margin: 5% auto;
-
-}
 /* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size) */
 
 /* STEP 5c: Instead, apply the same background-image to the BODY, and apply a background-color to the DIV#container */
 body {
-
-  font-size: 150%;
+  
+  font-size: 150%;;
 }
 
+header {
+  text-align: center;
+  border: dashed 5px purple;
+  margin: 5% auto;
+  background-image: url('./images/cardboard-texture.jpg')
+}
 /* STEP 6a: Control the width of the DIV#container with a fixed unit (px) */
-div#container {
 
-}
 /* STEP 6b: Change the width to a relative unit of measure (%) */
 
 /* STEP 6c: Use an elastic unit, instead (em) and change the base font-size on the BODY element */
@@ -36,24 +42,41 @@ div#container {
 
 /* STEP 8a: Change the display property of the H1 EM element to block, then to inline-block (default for EM is inline) */
 h1 em {
-
-}
+ padding: 6px;
+ border: 5px solid rgb(0, 0, 0);
+ background-image: url('./images/stucco.jpg')
+;
 /* STEP 8b: Manipulate the visibility of the H1 EM element (visibility and display are different) */
+}
 
 /* STEP 10: Comment out the width and display settings below for the MAIN SECTION elements, and use Flexbox, instead - set display to 'flex' on the MAIN element (the container of the SECTION elements) - learn more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 main {
-
+margin: 5% auto;
+padding: 15% auto;
 }
 
+h2{
+  text-align: center;
+
+}
 /* STEP 8c: Set the width of the 3 MAIN SECTION elements to 30% and arrange them with the display property using inline-block to arrange them side-by-side */
 
 main section {
-  border: 5px solid blue;
-
+  margin: 15% auto;
+  padding: 15% auto;
+  border:solid rgb(0, 0, 0);
+  border-width: 10px
 }
 
-main section:nth-of-type(2) {
-  border-color: red;
+main section:nth-of-type(2) { 
+  margin: 15% auto;
+  padding: 15% auto;
+  border-color: rgb(255, 149, 0);
+}
+p
+{
+  text-align: center;
+
 }
 
 /* STEP 9: float the SECTION P IMG element to the left, then right */

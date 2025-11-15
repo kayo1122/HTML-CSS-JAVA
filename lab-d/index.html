@@ -6,8 +6,7 @@
 		<meta name="author" content="The name of the document’s author to go here" />
 		<meta name="description" content="A concise and accurate summary of the document content is to appear here">
 		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-		<!-- STEP 1: Build a LINK element to attach the EXTERNAL style sheet located in the 'css' folder - the CSS file is called, 'styles.css' - don't forget to add the rel attribute equal to 'stylesheet' - proceed to styles.css for STEP 2 -->
-
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body id="section1">
 		<!-- Page-level header -->
@@ -15,9 +14,16 @@
  			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-<?php
-	include('includes/global-nav.php');
-?>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Go to the Home page">Home</a></li>
+					<li><a href="red.html" title="Learn about red blocks">Red Blocks</a></li>
+					<li><a href="blue.html" title="Learn about blue blocks">Blue Blocks</a></li>
+					<li><a href="yellow.html" title="Learn about yellow blocks">Yellow Blocks</a></li>
+					<li><a href="green.html" title="Learn about green blocks">Green Blocks</a></li>
+					<li><a href="about.html" title="Learn more about us">About</a></li>
+				</ul>
+			</nav>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -48,7 +54,7 @@
 			<aside>
 				<!-- Newsletter Subscribe Form -->
 				<h3 class="new-feature">Subscribe to Newsletter</h3>
-				<form action="subscribe.php" method="get">
+				<form action="subscribe.html" method="get">
 					<label for="emailAddress">Email</label>
 					<input type="email" name="emailAddress" id="emailAddress" required />
 					<button type="submit">Subscribe</button>
@@ -69,9 +75,10 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-<?php
-	include('includes/footer-nav.php');
-?>
+			<nav>
+				<a href="about/privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a> | <a href="/about/terms-of-use.html" title="Understand our Terms of Use">Terms of Use</a> | <a href="/about/terms-of-use.php#limitation-liability" title="Our Limitation of Liability explained">Limitation of Liability</a>
+			</nav>
+			</nav>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>

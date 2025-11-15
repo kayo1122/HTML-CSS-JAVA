@@ -14,9 +14,16 @@
 			<img src="../images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-<?php
-	include('../includes/footer-nav.php');
-?>
+			<nav>
+				<ul>
+					<li><a href="../index.html" title="Go to the Home page">Home</a></li>
+					<li><a href="../red.html" title="Learn about red blocks">Red Blocks</a></li>
+					<li><a href="../blue.html" title="Learn about blue blocks">Blue Blocks</a></li>
+					<li><a href="../yellow.html" title="Learn about yellow blocks">Yellow Blocks</a></li>
+					<li><a href="../green.html" title="Learn about green blocks">Green Blocks</a></li>
+					<li><a href="../about.html" title="Learn more about us">About</a></li>
+				</ul>
+			</nav>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -36,12 +43,29 @@
 				<h4 id="limitation-liability">Limitation of Liability</h4>
 				<p>Nunc sit amet mauris leo. Nullam bibendum quam a gravida consectetur. Integer viverra ipsum sit amet ligula elementum, eget faucibus ante ornare. Aenean at fermentum enim. Vestibulum lacinia vestibulum nibh, eleifend sodales augue pulvinar quis. Mauris tincidunt, nibh ac elementum interdum, risus leo vestibulum mauris, non mattis dui quam quis est. Quisque placerat pellentesque tincidunt. Proin consectetur congue vehicula. Morbi blandit dolor et convallis feugiat.</p>
 			</section>
+			<!-- Side Notes / Related Information -->
+			<aside>
+				<!-- Newsletter Subscribe Form -->
+				<h3 class="new-feature">Subscribe to Newsletter</h3>
+				<form action="subscribe.html"method="get">
+					<label for="emailAddress">Email</label>
+					<input type="email" name="emailAddress" id="emailAddress" required />
+					<button type="submit">Subscribe</button>
+				</form>
+				<h3>Did You Know…?</h3>
+				<p>One of the most important components of effective life-long learning is <em>play</em>. Learning a new skill (like Web development) should include a certain amount of play. Renowned children’s programming entertainer Mr. Rogers certainly knew about the value that play represented:</p>
+				<!-- Quotation -->
+				<blockquote cite="https://www.brainyquote.com/quotes/fred_rogers_193081">
+					<p>Play is often talked about as if it were a relief from serious learning. But for children, play <em>is</em> serious learning. Play is really the work of childhood. –Fred Rogers</p>
+				</blockquote>
+				<p>Take a little time every day to just <strong>play</strong> with technology – you’ll be surprised how much you learn.</p>
+			</aside>
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-<?php
-	require $_SERVER['DOCUMENT_ROOT'].'\includes\footer-nav.php';
-?>
+			<nav>
+				<a href="privacy-policy.html" title="Read our Privacy Policy">Privacy Policy</a> | <a href="privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a> | <a href="/about/terms-of-use.html" title="Understand our Terms of Use">Terms of Use</a> | <a href="/about/terms-of-use.php#limitation-liability" title="Our Limitation of Liability explained">Limitation of Liability</a>
+			</nav>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>
