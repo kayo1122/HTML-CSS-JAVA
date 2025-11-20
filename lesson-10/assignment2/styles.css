@@ -1,0 +1,115 @@
+html {
+  background-image: url("images/spiderman2-background2.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header animation */
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 4em;
+  color: #ff3c00;
+  margin-top: 1em;
+  letter-spacing: 2px;
+  animation: fadeInDrop 1.5s ease-out;
+}
+
+@keyframes fadeInDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #ffd700;
+  margin-bottom: 1em;
+  transition: color 0.5s ease;
+}
+
+header h2:hover {
+  color: #ffcc00;
+}
+
+/* Poster text fade-in */
+.poster-text p {
+  margin: 1em auto;
+  width: 80%;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  opacity: 0;
+  animation: fadeInText 2s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Image hover transform */
+figure img {
+  width: 300px;
+  border: 4px solid #ff3c00;
+  margin-top: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff3c00;
+}
+
+figcaption {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  color: #ccc;
+}
+
+/* Link hover effects */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav li {
+  margin: 0.5em 0;
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Footer fade-in */
+footer {
+  margin-top: 2em;
+  font-size: 0.8em;
+  color: #aaa;
+  opacity: 0;
+  animation: fadeInText 2s ease forwards;
+  animation-delay: 2s;
+}
